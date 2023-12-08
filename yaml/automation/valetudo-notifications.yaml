@@ -58,6 +58,7 @@ blueprint:
           options:
             - English
             - German
+            - Danish
 
 trigger_variables:
   rendered_map_sensor: !input rendered_map
