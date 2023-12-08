@@ -108,6 +108,11 @@ variables:
       success_msg: "Die Reinigung wurde um {{ now().strftime('%-H:%M') }} Uhr erfolgreich abgeschlossen."
       error_msg: "Der Staubsauger hat ein Problem: {{ states( error_message_sensor ) }}"
       default_msg: Alles gut.
+    Danish:
+      title: Robotstøvsuger
+      success_msg: "Rengøringsopgaven blev afsluttet kl. {{ now().strftime('%-H:%M') }}."
+      error_msg: "Robotten stødte på et problem: {{ states( error_message_sensor ) }}"
+      default_msg: "Alt er godt."      
 
   notify_targets: >-
       {% set ns = namespace(targets=[]) %}
